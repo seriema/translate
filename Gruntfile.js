@@ -412,6 +412,8 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+	grunt.registerTask('publish', ['build', 'gh-pages']);
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
