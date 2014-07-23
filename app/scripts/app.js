@@ -45,7 +45,7 @@ angular
         controller: 'NotFoundCtrl'
       })
       .when('/not-found-translation', {
-        templateUrl: '../views/not-found-translation.html',
+        templateUrl: 'views/not-found-translation.html',
         controller: 'NotFoundTranslationCtrl'
       })
       .when('/not-found-ambiguous', {
