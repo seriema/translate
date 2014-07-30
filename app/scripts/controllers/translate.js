@@ -29,7 +29,6 @@ angular.module('translapediaApp')
 		}
 
 		function onSuccess(response) {
-			console.log(response);
 			var pageId = response.data.query.pageids[0];
 			var article = response.data.query.pages[pageId];
 //			var imgRoot = '';
