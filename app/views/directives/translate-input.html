@@ -3,9 +3,7 @@
     <label for="fromLanguage" class="col-xs-2 col-sm-1 control-label">From</label>
     <div class="col-xs-10 col-sm-11">
       <select class="form-control" id="fromLanguage" ng-model="fromLangId">
-        <option value="en-US">English</option>
-        <option value="pt-BR">Portuguese</option>
-        <option value="sv-SE">Swedish</option>
+        <option ng-repeat="lang in languages" ng-selected="lang.id == fromLangId" value="{{lang.id}}">{{lang.text}}</option>
       </select>
     </div>
   </div>
@@ -13,9 +11,7 @@
     <label for="toLanguage" class="col-xs-2 col-sm-1 control-label">To</label>
     <div class="col-xs-10 col-sm-11">
       <select class="form-control" name="toLanguage" id="toLanguage" ng-model="toLangId">
-        <option value="pt-BR">Portuguese</option>
-        <option value="en-US">English</option>
-        <option value="sv-SE">Swedish</option>
+        <option ng-repeat="lang in languages" ng-selected="lang.id == toLangId" value="{{lang.id}}">{{lang.text}}</option>
       </select>
     </div>
   </div>
