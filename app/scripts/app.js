@@ -14,6 +14,13 @@ angular
     'ngRoute',
     'ngSanitize'
   ])
+
+	.constant('languageCodes', {
+		en: 'English',
+		pt: 'Portuguese',
+		sv: 'Swedish'
+	})
+
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
