@@ -1,0 +1,39 @@
+{
+	"query-continue": {
+		"images": {
+			"imcontinue": "382945|Annona_muricata_Blanco1.196.png"
+		}
+	},
+	"query": {
+		"normalized": [
+			{
+				"from": "soursop",
+				"to": "Soursop"
+			}
+		],
+		"pageids": [
+			"382945"
+		],
+		"pages": {
+			"382945": {
+				"pageid": 382945,
+				"ns": 0,
+				"title": "Soursop",
+				"extract": "<p><b>Soursop</b> is the fruit of <i>Annona muricata</i>, a broadleaf, flowering, evergreen tree native to Mexico, Cuba, Central America, the Caribbean, and northern South America, primarily Colombia,</p>...",
+				"images": [
+					{
+						"ns": 6,
+						"title": "File:Annona muricata 1.jpg"
+					}
+				],
+				"langlinks": [
+					{
+						"lang": "pt",
+						"url": "http://pt.wikipedia.org/wiki/Graviola",
+						"*": "Graviola"
+					}
+				]
+			}
+		}
+	}
+}
