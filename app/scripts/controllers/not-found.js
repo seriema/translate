@@ -11,8 +11,11 @@ angular.module('translapediaApp')
   .controller('NotFoundCtrl', function ($scope, $rootScope) {
 		if (!$rootScope.translation) {
 			$scope.translation = {
-				fromLangId: 'en',
 				originalTerm: 'prffteghh',
+
+				fromLangId: 'en',
+				fromLang: 'English',
+
 				toLangId: 'sv'
 			};
 		}
