@@ -19,13 +19,9 @@ angular.module('translapediaApp')
 		$scope.desc = 'Soursop is the fruit of Annona muricata, a broadleaf, flowering, evergreen tree native to Mexico, Cuba, Central America, the Caribbean, and northern South America, primarily ...';
 		$scope.imageUrl = '//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Annona_muricata_Blanco1.196.png/474px-Annona_muricata_Blanco1.196.png';
 */
-		function onFail() {
-			$scope.fromLang = '';
-			$scope.fromTerm = '';
-			$scope.toLang = '';
-			$scope.toTerm = '';
-			$scope.desc = 'FAIL';
-			$scope.imageUrl = ''; // '//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Annona_muricata_Blanco1.196.png/474px-Annona_muricata_Blanco1.196.png';
+		function onFail(data) {
+			console.error(data);
+			$location.path('/error');
 		}
 
 		function onSuccess(response) {

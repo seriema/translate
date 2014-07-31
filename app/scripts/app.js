@@ -59,6 +59,9 @@ angular
         templateUrl: 'views/not-found-ambiguous.html',
         controller: 'NotFoundAmbiguousCtrl'
       })
+			.when('/error', {
+				templateUrl: 'views/error.html'
+			})
       .otherwise({
         redirectTo: '/'
       });
