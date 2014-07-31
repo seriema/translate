@@ -1,11 +1,13 @@
 <div class="row">
   <div class="col-sm-8">
-    <span class="text-uppercase"><strong>{{translation.toLangId}}:</strong> {{translation.toTerm}}</span>
-    <br>
-    <strong>{{translation.fromLangId}}:</strong> {{translation.fromTerm}}
-    <br>
-    <br>
-    <p>"{{translation.originalTerm}}" was redirected to "{{translation.fromTerm}}". <a href="" ng-click="showMore = !showMore">Did you mean something else?</a></p>
+    <div class="well">
+      <translate-input />
+    </div>
+
+    <p>{{translation.toLang}}: <strong>{{translation.toTerm}}</strong></p>
+
+    <p>Note: "{{translation.originalTerm}}" was redirected to "{{translation.fromTerm}}". <a href="" ng-click="showMore = !showMore">Did you mean something else?</a></p>
+
     <div ng-show="showMore">
       <p>TODO! (not implemented yet)</p>
       <!--
@@ -38,11 +40,6 @@
       -->
     </div>
 
-    <br>
-    <br>
-    <div class="well">
-      <translate-input />
-    </div>
   </div>
 
   <div class="col-sm-4">

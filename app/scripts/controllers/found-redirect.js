@@ -19,6 +19,7 @@ angular.module('translapediaApp')
 				fromDesc: 'Backpacking is generally an extended journey or walk with a backpack.[1] However, for North American hikers it more frequently describes a multi-day hike that involves camping, ...',
 
 				toLangId: 'sv',
+				toLang: 'Swedish',
 				toTerm: 'vandring'
 //				imageUrl = '//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Annona_muricata_Blanco1.196.png/474px-Annona_muricata_Blanco1.196.png';
 			};

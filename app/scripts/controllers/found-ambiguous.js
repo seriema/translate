@@ -8,5 +8,10 @@
  * Controller of the translapediaApp
  */
 angular.module('translapediaApp')
-  .controller('FoundAmbiguousCtrl', function () {
-  });
+  .controller('FoundAmbiguousCtrl', function ($scope, $rootScope) {
+		if (!$rootScope.translation) {
+			$scope.translation = {
+				originalTerm: 'trek'
+			};
+		}
+	});
