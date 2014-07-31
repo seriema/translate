@@ -41,10 +41,11 @@ angular.module('translapediaApp')
 			$location.path('/found');
 		}
 
-//		var apiUrl = '.wikipedia.org/w/api.php';
-//		$http.get('//' + $scope.fromLangId + apiUrl, {
-		$http.get('/mock_data/soursop.json', {
+		var apiUrl = '.wikipedia.org/w/api.php';
+		$http.jsonp('//' + $scope.fromLangId + apiUrl, {
+//		$http.get('/mock_data/soursop.json', {
 			params: {
+				callback: 'JSON_CALLBACK',
 				action: 'query',
 				prop: 'extracts|images|langlinks',
 				format: 'json',
