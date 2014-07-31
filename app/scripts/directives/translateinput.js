@@ -11,10 +11,11 @@ angular.module('translapediaApp')
     return {
 			restrict: 'E',
       templateUrl: 'views/directives/translate-input.html',
-			controller: function ($scope, $location, languageCodes) {
-				$scope.term = $scope.term || '';
-				$scope.toLangId = 'pt';
-				$scope.fromLangId = 'en';
+			controller: function ($scope, $rootScope, $location, languageCodes) {
+				var previousTranslation = $rootScope.translation || {};
+				$scope.term = previousTranslation.originalTerm || '';
+				$scope.toLangId = previousTranslation.toLangId || 'pt';
+				$scope.fromLangId = previousTranslation.fromLangId || 'en';
 
 				$scope.languages = Object.keys(languageCodes).map(function(key) {
 					return {
