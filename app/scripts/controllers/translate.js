@@ -45,12 +45,14 @@ angular.module('translapediaApp')
 				return $location.path('/not-found');
 			}
 
+			// Term/article found, now try to translate
 			var article = response.data.query.pages[pageId];
 			var redirected = !!response.data.query.redirects && response.data.query.redirects.length > 0;
 
 			angular.extend($rootScope.translation, {
 				fromTerm: article.title,
 				fromDesc: article.extract,
+				fromArticleUrl: article.fullurl,
 				redirected: redirected
 			});
 
@@ -83,21 +85,32 @@ angular.module('translapediaApp')
 		$http.jsonp('//' + $scope.fromLangId + apiUrl, {
 //		$http.get('/mock_data/soursop.json', {
 			params: {
+				// needed for Angular JSONP
 				callback: 'JSON_CALLBACK',
+
+				// setup info
 				action: 'query',
-				prop: 'extracts|images|langlinks',
+				prop: 'extracts|info|langlinks',
 				format: 'json',
+
+				// query parameters
+				indexpageids: '',
+				redirects: '',
+				titles: $scope.fromTerm,
+
+				// prop=extracts parameters
 				exchars: 200,
 				exlimit: 1,
 				exintro: '',
 				explaintext: '',
-				imlimit: 1,
-				indexpageids: '',
+
+				// prop=info parameters
+				inprop: 'url',
+
+				// prop=langlinks parameters
 				lllimit: 10,
 				llprop: 'url',
-				lllang: $scope.toLangId,
-				redirects: '',
-				titles: $scope.fromTerm
+				lllang: $scope.toLangId
 			}
 		}).then(onSuccess, onFail);
   });

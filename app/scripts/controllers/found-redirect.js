@@ -17,6 +17,7 @@ angular.module('translapediaApp')
 				fromLang: 'English',
 				fromTerm: 'Backpacking',
 				fromDesc: 'Backpacking is generally an extended journey or walk with a backpack.[1] However, for North American hikers it more frequently describes a multi-day hike that involves camping, ...',
+				fromArticleUrl: 'http://en.wikipedia.org/wiki/Backpacking_(wilderness)',
 
 				toLangId: 'sv',
 				toLang: 'Swedish',
