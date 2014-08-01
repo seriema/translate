@@ -21,7 +21,9 @@ angular.module('translapediaApp')
 
 				toLangId: 'sv',
 				toLang: 'Swedish',
-				toTerm: 'vandring'
+				toTerm: 'vandring',
+				toArticleUrl: 'http://sv.wikipedia.org/wiki/Vandring'
+
 //				imageUrl = '//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Annona_muricata_Blanco1.196.png/474px-Annona_muricata_Blanco1.196.png';
 			};
 		}

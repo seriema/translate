@@ -21,7 +21,8 @@ angular.module('translapediaApp')
 
 				toLangId: 'pt',
 				toLang: 'Portuguese',
-				toTerm: 'Graviola'
+				toTerm: 'Graviola',
+				toArticleUrl: 'http://pt.wikipedia.org/wiki/Graviola'
 //				imageUrl = '//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Annona_muricata_Blanco1.196.png/474px-Annona_muricata_Blanco1.196.png';
 			};
 		}
