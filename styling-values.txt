@@ -1,0 +1,100 @@
+translapedia
+
+ikoner font awesome
+font: font-family: HelveticaNeue, Helvetica, arial, sans serif 
+
+lila: #7C00EB
+
+top-lila bar DESKTOP
+height: 46 px
+… ”Transla”
+font-family: LucidaGrande; (inte websafe!)
+font-size: 23px;
+color: #E4CCFB;
+line-height: 27px;
+… ”pedia”
+font-family: Cambria-BoldItalic; (inte websafe!)
+font-size: 25px;
+color: #FFFFFF;
+line-height: 30px;
+… ”- Correct translations..”
+font-family: LucidaGrande; (inte websafe!)
+font-size: 18px;
+color: #FFFFFF;
+line-height: 21px;
+
+top lila bar MOBILE
+height: 10px
+
+
+top toolbar
+höjd: 40px
+bg grå (det bakom pilen): #DCDCDC
+knapp bg ljugsgrå: #F0F0F0
+text: #2B2B2B
+pilar/ikoner: #262626 (kanske köra samma text?)
+nedåtpilar: fa-angle-down, 16px
+högerpil i mitten: fa-caret-right, 18px
+
+
+sökfält
+border-radius: 8px;
+background: #F9F9F9;
+border: 1px solid #A4A4A4;
+-moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+… input text
+font-size: 17px;
+color: #171718;
+line-height: 20px;
+… hjälptext
+italic
+font-size: 17px;
+color: #5B5B5E;
+line-height: 20px;
+
+
+translate knapp
+border-radius: 8px;
+background: #FFFFFF;
+border: 3px solid #EE9B18;
+font-size: 20px;
+color: #E98F00; 
+line-height: 24px;
+
+
+till-språket
+… brödtext
+font-size: 14px;
+color: #131313;
+line-height: 19px;
+… ”Match found..”
+font-size: 15px;
+color: #FFFFFF;
+line-height: 17px;
+… ”Graviola”
+font-size: 30px;
+color: #FFFFFF;
+line-height: 36px;
+
+
+
+footer över del (med why translate..)
+…rubrik
+font-family: HelveticaNeue-Medium; (eller font weight?)
+font-size: 18px;
+color: #3A3A3A;
+line-height: 23px;
+…brödtext
+background: #F6F6F6;
+font-size: 13px;
+color: #2F2F2F;
+line-height: 19px;
+
+
+footer nedre del (med from jp etc)
+background: #E2E2E2;
+font-size: 13px;
+color: #474747;
+
+
