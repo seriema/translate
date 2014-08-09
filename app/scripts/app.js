@@ -17,7 +17,12 @@ angular
 
 	.constant('languageCodes', {
 		en: 'English',
+		fr: 'French',
+		de: 'German',
+		it: 'Italian',
+		pl: 'Polish',
 		pt: 'Portuguese',
+		es: 'Spanish',
 		sv: 'Swedish'
 	})
 
