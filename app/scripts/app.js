@@ -10,9 +10,9 @@
  */
 angular
   .module('translapediaApp', [
-    'ngAnimate',
-    'ngRoute',
-    'ngSanitize'
+    //'ngAnimate',
+    'ngRoute'
+    //'ngSanitize'
   ])
 
 	.constant('languageCodes', {
