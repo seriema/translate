@@ -16,14 +16,19 @@ angular
   ])
 
 	.constant('languageCodes', {
-		en: 'English',
-		fr: 'French',
-		de: 'German',
-		it: 'Italian',
-		pl: 'Polish',
-		pt: 'Portuguese',
-		es: 'Spanish',
-		sv: 'Swedish'
+		ceb: 'Cebuano',
+		nl:  'Dutch',
+		en:  'English',
+		fr:  'French',
+		de:  'German',
+		it:  'Italian',
+		pl:  'Polish',
+		pt:  'Portuguese',
+		ru:  'Russian',
+		es:  'Spanish',
+		sv:  'Swedish',
+		war: 'Waray',
+		vi:  'Vietnamese'
 	})
 
   .config(function ($routeProvider) {
