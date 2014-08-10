@@ -5,29 +5,20 @@ font: font-family: HelveticaNeue, Helvetica, arial, sans serif
 
 lila: #7C00EB
 
-top-lila bar DESKTOP
+*top-lila bar DESKTOP
 height: 46 px
-… ”Transla”
-font-family: LucidaGrande; (inte websafe!)
-font-size: 23px;
-color: #E4CCFB;
-line-height: 27px;
-… ”pedia”
-font-family: Cambria-BoldItalic; (inte websafe!)
-font-size: 25px;
-color: #FFFFFF;
-line-height: 30px;
+… logo: use graphics logo neg png
 … ”- Correct translations..”
 font-family: LucidaGrande; (inte websafe!)
 font-size: 18px;
 color: #FFFFFF;
 line-height: 21px;
 
-top lila bar MOBILE
+*top lila bar MOBILE
 height: 10px
 
 
-top toolbar
+*top toolbar
 höjd: 40px
 bg grå (det bakom pilen): #DCDCDC
 knapp bg ljugsgrå: #F0F0F0
@@ -37,7 +28,7 @@ nedåtpilar: fa-angle-down, 16px
 högerpil i mitten: fa-caret-right, 18px
 
 
-sökfält
+*sökfält
 border-radius: 8px;
 background: #F9F9F9;
 border: 1px solid #A4A4A4;
@@ -54,7 +45,7 @@ color: #5B5B5E;
 line-height: 20px;
 
 
-translate knapp
+*translate knapp
 border-radius: 8px;
 background: #FFFFFF;
 border: 3px solid #EE9B18;
@@ -63,7 +54,7 @@ color: #E98F00;
 line-height: 24px;
 
 
-till-språket
+*till-språket
 … brödtext
 font-size: 14px;
 color: #131313;
@@ -78,8 +69,7 @@ color: #FFFFFF;
 line-height: 36px;
 
 
-
-footer över del (med why translate..)
+*footer övre del (med why translate..)
 …rubrik
 font-family: HelveticaNeue-Medium; (eller font weight?)
 font-size: 18px;
@@ -92,7 +82,7 @@ color: #2F2F2F;
 line-height: 19px;
 
 
-footer nedre del (med from jp etc)
+*footer nedre del (med from jp etc)
 background: #E2E2E2;
 font-size: 13px;
 color: #474747;
